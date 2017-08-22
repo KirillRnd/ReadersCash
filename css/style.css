@@ -39,6 +39,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 20;
 }
 .main-header {
     padding: 0 6%;
@@ -80,10 +81,12 @@ header {
     text-align: center;
 }
 .screen1{
-    margin-top: 70px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 120px;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 .about {
     margin-top: 40px;
@@ -149,13 +152,14 @@ main{
     background-color: #f7f7f7;
 }
 .main__index {
-    background: #f7f7f7 url('../img/discover.png') 0 660px no-repeat;
+    background: #f7f7f7;
     background-size: 100%;
 }
 .screen2{
     display: flex;
     height: 100vh;
     padding-left: 35%;
+    background: url('../img/discover.png') 0 0px no-repeat;
 }
 .screen2__text{
     margin-top: 15%;
@@ -216,11 +220,12 @@ main{
     padding-left: 18.15%;
     padding-right: 9.56%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .screen4__text {
     width: 385px;
     padding-top: 100px;
+    display: none;
 }
 .screen4__telephone_block {
     background: url('../img/telephone3.png') 50% 30px no-repeat;
@@ -1012,6 +1017,8 @@ footer{
 	margin-right: auto;
 	background-size:cover;
 	width: 286px;
+	background-position: center;
+	border-radius: 3px;
 }
 .screen3_slider_btn_link{
 	/* background:none; */
