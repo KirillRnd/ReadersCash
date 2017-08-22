@@ -992,14 +992,14 @@ footer{
 }
 .screen2_slider_btn{
 	position: relative;
-	/* background: url(../img/telephone1_slider_btn.png) no-repeat; */
-	width: 25%;
-	/* height: 31px; */
+	background: url(../img/telephone1_slider_btn.png) no-repeat;
+	height: 31px;
+	width: 80px;
 	z-index: 5;
-	top: 69%;
+	top: 61%;
 	left: 68.5%;
 	display:none;
-	background-size:cover;
+	background-size: contain;
 }
 .screen2_slider_btn_link{
 	background:none;
