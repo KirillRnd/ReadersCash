@@ -169,11 +169,13 @@ main{
 }
 .screen2__telephone_block{
     width: 376px;
-    height: 80%;
+    height: 688px;
     background: url('../img/telephone1.png') 50% 50% no-repeat;
-    background-size: contain;
+    /*background-size: contain;*/
     align-self: center;
+    flex-shrink: 0;
 }
+
 .number{
     font-family: "Proxima Nova Semibold", Arial, sans-serif;
     font-size: 30px;
@@ -203,10 +205,11 @@ main{
 }
 .screen3__telephone_block{
     width: 376px;
-    height: 80%;
+    height: 688px;
     background: url('../img/telephone2.png') 50% 50% no-repeat;
-    background-size: contain;
+    /*background-size: contain;*/
     align-self: center;
+    flex-shrink: 0;
 }
 .screen3__text{
     width: 340px;
@@ -230,10 +233,11 @@ main{
 .screen4__telephone_block {
     background: url('../img/telephone3.png') 50% 30px no-repeat;
     width: 376px;
-    height: 80%;
-    background-size: contain;
+    height: 688px;
+    /*background-size: contain;*/
     align-self: center;
     margin-left: 5%;
+    flex-shrink: 0;
 }
 .check_score {
     width: 375px;
@@ -979,16 +983,15 @@ footer{
 	background: url(../img/telephone1_slider.png)  repeat;
 	/* margin:auto; */
 	/* width:325px; */
-	height: 70%;
+	height: 575px;
 	z-index: 2;
 	/* margin-top: 95px; */
-	margin-left: 11.5%;
-	margin-right: 11.5%;
+	margin-left: 26px;
+    margin-right: 26px;
 	left: 0;
 	right: 0;
-	margin-top: 34.2%;
+	margin-top: 101px;
 	background-position-y: -400px;
-	background-size: cover;
 }
 .screen2_slider_btn{
 	position: relative;
@@ -998,8 +1001,7 @@ footer{
 	z-index: 5;
 	top: 61%;
 	left: 68.5%;
-	display:none;
-	background-size: contain;
+	background-size: cover;
 }
 .screen2_slider_btn_link{
 	background:none;
@@ -1035,4 +1037,34 @@ footer{
 	display:none;
 	width:5em;
 	z-index: 5;
+}
+@media(max-width: 700px) {
+	.screen2__telephone_block{
+		height: 525px;
+		background-size: contain;
+	}
+	.screen3__telephone_block{
+		height: 525px;
+		background-size: contain;
+	}
+	.screen4__telephone_block{
+		height: 525px;
+		background-size: contain;
+	}
+	.screen2_slider {
+		/* position: absolute; */
+		background: url(../img/telephone1_slider.png)  repeat;
+		/* margin:auto; */
+		width: 247px;
+		background-size: 247px auto;
+		height: 388px;
+		z-index: 2;
+		/* margin-top: 95px; */
+		margin-left: 65px;
+		margin-right: 65px;
+		left: 0;
+		right: 0;
+		margin-top: 87px;
+		background-position-y: -400px;
+	}
 }
