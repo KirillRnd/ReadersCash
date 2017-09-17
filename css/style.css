@@ -39,6 +39,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 20;
 }
 .main-header {
     padding: 0 6%;
@@ -80,10 +81,12 @@ header {
     text-align: center;
 }
 .screen1{
-    margin-top: 70px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 120px;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 .about {
     margin-top: 40px;
@@ -149,13 +152,14 @@ main{
     background-color: #f7f7f7;
 }
 .main__index {
-    background: #f7f7f7 url('../img/discover.png') 0 660px no-repeat;
+    background: #f7f7f7;
     background-size: 100%;
 }
 .screen2{
     display: flex;
     height: 100vh;
     padding-left: 35%;
+    background: url('../img/discover.png') 0 0px no-repeat;
 }
 .screen2__text{
     margin-top: 15%;
@@ -165,10 +169,11 @@ main{
 }
 .screen2__telephone_block{
     width: 376px;
-    height: 80%;
+    height: 688px;
     background: url('../img/telephone1.png') 50% 50% no-repeat;
-    background-size: contain;
+    /*background-size: contain;*/
     align-self: center;
+    flex-shrink: 0;
 }
 .number{
     font-family: "Proxima Nova Semibold", Arial, sans-serif;
@@ -199,10 +204,11 @@ main{
 }
 .screen3__telephone_block{
     width: 376px;
-    height: 80%;
-    background: url('../img/telephone1.png') 50% 50% no-repeat;
-    background-size: contain;
+    height: 688px;
+    background: url('../img/telephone2.png') 50% 50% no-repeat;
+    /*background-size: contain;*/
     align-self: center;
+    flex-shrink: 0;
 }
 .screen3__text{
     width: 340px;
@@ -216,19 +222,21 @@ main{
     padding-left: 18.15%;
     padding-right: 9.56%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .screen4__text {
     width: 385px;
     padding-top: 100px;
+    display: none;
 }
 .screen4__telephone_block {
     background: url('../img/telephone3.png') 50% 30px no-repeat;
     width: 376px;
-    height: 80%;
-    background-size: contain;
+    height: 688px;
+    /*background-size: contain;*/
     align-self: center;
     margin-left: 5%;
+    flex-shrink: 0;
 }
 .check_score {
     width: 375px;
@@ -974,27 +982,26 @@ footer{
 	background: url(../img/telephone1_slider.png)  repeat;
 	/* margin:auto; */
 	/* width:325px; */
-	height: 70%;
+	height: 521px;
 	z-index: 2;
 	/* margin-top: 95px; */
-	margin-left: 11.5%;
-	margin-right: 11.5%;
+	margin-left: 26px;
+	margin-right: 26px;
 	left: 0;
 	right: 0;
-	margin-top: 34.2%;
+	margin-top: 101px;
 	background-position-y: -400px;
-	background-size: cover;
 }
 .screen2_slider_btn{
 	position: relative;
-	/* background: url(../img/telephone1_slider_btn.png) no-repeat; */
-	width: 25%;
-	/* height: 31px; */
+	background: url(../img/telephone1_slider_btn.png) no-repeat;
+	height: 31px;
+	min-width: 79px;
 	z-index: 5;
-	top: 69%;
+	top: 296px;
 	left: 68.5%;
-	display:none;
-	background-size:cover;
+	background-size: cover;
+	border-radius: 2px;
 }
 .screen2_slider_btn_link{
 	background:none;
@@ -1003,18 +1010,20 @@ footer{
 .screen3_slider_btn{
 	position: relative;
 	background: url(../img/telephone2_btn.png) no-repeat;
-	width: 310px;
 	height: 48px;
 	z-index: 5;
-	top: 602px;
+	top: 574px;
 	left: 0;
 	right:0;
 	margin-left: auto;
 	margin-right: auto;
 	background-size:cover;
+	width: 308px;
+	background-position: center;
+	border-radius: 3px;
 }
 .screen3_slider_btn_link{
-	background:none;
+	/* background:none; */
 	display:block;
 }
 .screen3_slider_arrow{
