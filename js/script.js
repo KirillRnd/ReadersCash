@@ -28,16 +28,28 @@ $(document).ready(function() {
 });
 
 $(document).scroll(function() {
-    var s_top = $("body").scrollTop();
-    if ((s_top >= el_pos2) & (screen2_used == 0)) {
-        screen2();
+    var s_top = $("html").scrollTop();
+	if (s_top == 0) {
+		s_top = $("body").scrollTop();
+	}
+	$( document ).ready(function() {
+	if( screen.width <= 760 ) {
+		
+	}
+	else {
+		if ((s_top >= el_pos2) & (screen2_used == 0)) {
+			screen2();
+		}
+		if ((s_top >= el_pos3) & (screen3_used == 0)) {
+			screen3();
+		}
+		if ((s_top >= el_pos4) & (screen4_used == 0)) {
+			screen4();
     }
-    if ((s_top >= el_pos3) & (screen3_used == 0)) {
-        screen3();
-    }
-    if ((s_top >= el_pos4) & (screen4_used == 0)) {
-        screen4();
-    }
+	};
+	});
+	
+    
 });
 
 function screen2() {
@@ -105,18 +117,16 @@ function screen3() {
     screen3_used = 1;
 
     var $new_shadow = $("<div></div>").addClass("black-back").appendTo("body"),
-		$new_btn = $("<div></div>").addClass(
-        "screen3_slider_btn").appendTo(".screen3"),
-		$new_btn_arrow = $("<img></img>").addClass(
-        "screen3_slider_arrow").attr("src","img/arrow_right.png").appendTo(".screen3"),
+		//$new_btn = $("<div></div>").addClass("screen3_slider_btn").appendTo(".screen3"),
+		$new_btn_arrow = $("<img></img>").addClass("screen3_slider_arrow").attr("src","img/arrow_right.png").appendTo(".screen3"),
 		$link_pos = $(".screen3_slider_btn_link").offset();
 
-    $new_btn.fadeIn(10);
+    //$new_btn.fadeIn(10);
 			
             $new_shadow.css("top", $(".screen3").position().top);
             $new_shadow.fadeIn(1500);
 			
-			$new_btn.offset({ top: $link_pos.top, left: $link_pos.left });
+			//$new_btn.offset({ top: $link_pos.top, left: $link_pos.left });
             
 			$new_btn_arrow.fadeIn(1490);
 			//настрою после адаптации к мобильным

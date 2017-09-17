@@ -175,7 +175,6 @@ main{
     align-self: center;
     flex-shrink: 0;
 }
-
 .number{
     font-family: "Proxima Nova Semibold", Arial, sans-serif;
     font-size: 30px;
@@ -983,11 +982,11 @@ footer{
 	background: url(../img/telephone1_slider.png)  repeat;
 	/* margin:auto; */
 	/* width:325px; */
-	height: 575px;
+	height: 521px;
 	z-index: 2;
 	/* margin-top: 95px; */
 	margin-left: 26px;
-    margin-right: 26px;
+	margin-right: 26px;
 	left: 0;
 	right: 0;
 	margin-top: 101px;
@@ -997,11 +996,12 @@ footer{
 	position: relative;
 	background: url(../img/telephone1_slider_btn.png) no-repeat;
 	height: 31px;
-	width: 80px;
+	min-width: 79px;
 	z-index: 5;
-	top: 61%;
+	top: 296px;
 	left: 68.5%;
 	background-size: cover;
+	border-radius: 2px;
 }
 .screen2_slider_btn_link{
 	background:none;
@@ -1012,13 +1012,13 @@ footer{
 	background: url(../img/telephone2_btn.png) no-repeat;
 	height: 48px;
 	z-index: 5;
-	top: 83%;
+	top: 574px;
 	left: 0;
 	right:0;
 	margin-left: auto;
 	margin-right: auto;
 	background-size:cover;
-	width: 286px;
+	width: 308px;
 	background-position: center;
 	border-radius: 3px;
 }
@@ -1037,34 +1037,4 @@ footer{
 	display:none;
 	width:5em;
 	z-index: 5;
-}
-@media(max-width: 700px) {
-	.screen2__telephone_block{
-		height: 525px;
-		background-size: contain;
-	}
-	.screen3__telephone_block{
-		height: 525px;
-		background-size: contain;
-	}
-	.screen4__telephone_block{
-		height: 525px;
-		background-size: contain;
-	}
-	.screen2_slider {
-		/* position: absolute; */
-		background: url(../img/telephone1_slider.png)  repeat;
-		/* margin:auto; */
-		width: 247px;
-		background-size: 247px auto;
-		height: 388px;
-		z-index: 2;
-		/* margin-top: 95px; */
-		margin-left: 65px;
-		margin-right: 65px;
-		left: 0;
-		right: 0;
-		margin-top: 87px;
-		background-position-y: -400px;
-	}
 }
